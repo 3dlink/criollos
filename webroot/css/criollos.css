@@ -1,0 +1,269 @@
+body{
+	width: 100%;
+	overflow-x: hidden;
+	font-size: 27px;
+	font-family: 'Roboto';
+	font-weight: lighter;
+}
+
+@font-face{
+   font-family: "Roboto";
+   src: url("../fonts/ROBOTO-BOLD.TTF") format("truetype");
+   font-weight: bold;
+}
+
+@font-face{
+   font-family: "Roboto";
+   src: url("../fonts/ROBOTO-LIGHT.TTF") format("truetype");
+   font-weight: lighter;
+}
+
+@font-face{
+   font-family: "Roboto";
+   src: url("../fonts/ROBOTO-MEDIUM.TTF") format("truetype");
+   font-weight: medium;
+}
+
+@font-face{
+   font-family: "Roboto";
+   src: url("../fonts/ROBOTO-REGULAR.TTF") format("truetype");
+   font-weight: regular;
+}
+
+@font-face{
+   font-family: "Roboto";
+   src: url("../fonts/ROBOTO-THIN.TTF") format("truetype");
+   font-weight: thin;
+}
+
+
+h1{
+	font-size: 60px;
+	text-align: center;
+}
+
+#home{
+	position: relative;
+}
+#slider_home{
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+#home_mask{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.contenedor{
+	background-color: #44a5ad;
+	position: relative;
+}
+
+#about{
+	text-align: center;
+}
+
+.diagonal_r_top {
+  background: none repeat scroll 0 0 #44a5ad;
+	top: -22px;
+	height: 102px;
+	left: -5%;
+	position: absolute;
+	transform: rotate(2deg);
+	width: 108%;
+	z-index: 3;
+}
+
+.diagonal_r {
+  background: none repeat scroll 0 0 #44a5ad;
+	top: -22px;
+	height: 102px;
+	left: -5%;
+	position: absolute;
+	transform: rotate(-2deg);
+	width: 108%;
+	z-index: 3;
+}
+
+.diagonal_l {
+  background: none repeat scroll 0 0 #44a5ad;
+	bottom: -22px;
+	height: 102px;
+	left: -5%;
+	position: absolute;
+	transform: rotate(2deg);
+	width: 108%;
+	z-index: 3;
+}
+
+.diagonal_l_top {
+  background: none repeat scroll 0 0 #44a5ad;
+	bottom: -22px;
+	height: 102px;
+	left: -5%;
+	position: absolute;
+	transform: rotate(-2deg);
+	width: 108%;
+	z-index: 3;
+}
+
+.section_content{
+	width: 100%;
+  padding: 70px 0px;
+	max-width: 1220px;
+	margin: 0 auto;
+	color: white;
+  z-index: 5;
+  position: relative;
+}
+
+#frases{
+	width: 100%;
+	position: relative;
+	background-image: url('../img/frases.png');
+	height: 499px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#services{
+	position: relative;
+	background-color: #990a5f;
+}
+
+#services > .diagonal_r_top, #services > .diagonal_l_top{
+	background: #990a5f !important;
+}
+
+#portfolio{
+	position: relative;
+	background-color: #334c68;
+}
+
+#portfolio > .diagonal_r, #portfolio > .diagonal_l{
+	background: #334c68 !important;
+}
+
+#twitter{
+	position: relative;
+	height: 600px;
+	background-color: white;
+}
+
+#twitter > .section_content{
+	color: black !important;
+}
+
+#contact{
+	background-color: white;
+}
+
+#contact > .section_content{
+	color: black !important;
+}
+
+#footer{
+	position: relative;
+	background-color: black;
+}
+
+#footer > .diagonal_r{
+	background: black !important;
+}
+
+
+/*carousel*/
+
+#carousel_frases .nav a small
+{
+    display: block;
+}
+#carousel_frases .nav
+{
+    background: #eee;
+}
+.nav-justified > li > a
+{
+    border-radius: 0px;
+}
+#carousel_frases
+{
+  z-index: 10;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+#twitter_frases .nav a small
+{
+    display: block;
+}
+#twitter_frases .nav
+{
+    background: #eee;
+}
+.nav-justified > li > a
+{
+    border-radius: 0px;
+}
+#twitter_frases > .carousel-inner > .item > .carousel-caption
+{
+	color: black !important;
+}
+#twitter_frases
+{
+	color: black !important;
+  z-index: 10;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.carousel-caption {
+	position: initial !important;
+}
+
+.linea_completa{
+	width: 100%;
+	max-width: 1090px;
+	margin: 0 auto;
+	height: 1px;
+	background: white;
+}
+
+.icono{
+	width: 60px;
+	height: 60px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 50px;
+}
+
+.icons{
+	margin: 0 auto;
+    width: 560px;
+  margin-bottom: 150px;
+}
+
+#youtube{
+	background-image:url('../img/youtube.png');
+}
+#facebook{
+	background-image:url('../img/facebook.png');
+}
+#instagram{
+	background-image:url('../img/instagram.png');
+}
+#twitter_logo{
+	background-image:url('../img/twitter_logo.png');
+}
+#linkedin{
+	background-image:url('../img/linkedin.png');
+}
